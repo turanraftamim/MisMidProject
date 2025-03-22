@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0A192F; /* Deep Blue */
+    color: #E5E5E5; /* Soft White */
+}
+
+/* Header */
+header {
+    background: rgba(10, 25, 47, 0.95);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid gold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 500;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* Buttons */
+button {
+    background: #102A43;
+    color: white;
+    padding: 12px 20px;
+    border: 2px solid gold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: gold;
+    color: black;
+}
+
+/* Home Page */
+.home-container {
+    display: flex;
+    flex-direction: column; /* Keep images below the text */
+    align-items: center;
+    padding: 60px;
+    gap: 30px;
+    text-align: center;
+}
+
+.hero {
+    text-align: center;
+    background: rgba(255, 215, 0, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    width: 60%;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+/* Home Page: Ensure Landscape Image */
+.images img {
+    width: 450px; /* Wider images */
+    height: 300px; /* Shorter height */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+}
+
+/* Products Page */
+.products-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Product Page: Ensure Portrait Image */
+.product {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* Product Images: Portrait */
+.product img {
+    width: 300px; /* Narrower width */
+    height: 450px; /* Taller height */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Contact Page */
+.contact-container {
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Contact Page: Right-aligned Image */
+.contact-content {
+    width: 60%;
+    text-align: left;
+}
+
+.contact-image {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-image img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contact Form */
+form {
+    background: rgba(255, 215, 0, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    display: inline-block;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+input, textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 6px;
+    border: none;
+    background: #0A192F;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background: rgba(10, 25, 47, 0.95);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid gold;
+    font-size: 16px;
+}
